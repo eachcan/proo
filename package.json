@@ -1,14 +1,14 @@
 {
-  "name": "prototo",
+  "name": "protoc",
   "version": "0.0.1",
   "description": "Generate Api Docs/Test Suits/Multiple Language Code/Wiki and all you need from .rc format files",
   "main": "index.js",
   "scripts": {
-    "test": "prototo"
+    "test": "protoc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eachcan/prototo.git"
+    "url": "git+https://github.com/eachcan/protoc.git"
   },
   "keywords": [
     "protocol",
@@ -18,7 +18,7 @@
   "author": "eachcan@gmail.com",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/eachcan/prototo/issues"
+    "url": "https://github.com/eachcan/protoc/issues"
   },
-  "homepage": "https://github.com/eachcan/prototo#readme"
+  "homepage": "https://github.com/eachcan/protoc#readme"
 }
