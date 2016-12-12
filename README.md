@@ -3,6 +3,7 @@
 Protocol compiler 是一款与语言、平台无关的协议编译器，根据协议描述文件生成文档、测试、各语言代码等，也可以生成 Protocol Buffers/Thrift 等代码。
 
 ```
+# filename: test.rc
 message ScMessage Sc表示server to client, 同理 Cs 表示 Client to server
 	required bool	success	1	是否成功
 	optional int32	errno	2	=0	错误码，@{ERR_USER_NOT_EXIST, ERR_SYSTEM}
@@ -66,11 +67,42 @@ output($data);
 
 ```shell
 $ sudo npm install -g protoc
+```
 
 ## 使用
 
+### 创建项目
+
+```shell
+$ protoc --init .
+```
+
+### 目录结构
+
+```
+|- src
+|   |- project1
+|   |- project2
+|- project.json
+```
+
+src/project1 表示是一个项目，这下面就可以存放 `.rc` 文件了
+
+### 生成
+
+```shell
+$ protoc
+```
+
 ## 语法
+
+### 概念
+
+### 数据定义
+
+### RPC 定义 (Service)
 
 ## 配置
 
 ## 扩展
+
