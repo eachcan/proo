@@ -1,0 +1,24 @@
+{
+  "name": "prototo",
+  "version": "0.0.1",
+  "description": "Generate Api Docs/Test Suits/Multiple Language Code/Wiki and all you need from .rc format files",
+  "main": "index.js",
+  "scripts": {
+    "test": "prototo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eachcan/prototo.git"
+  },
+  "keywords": [
+    "protocol",
+    "protobuf",
+    "api doc"
+  ],
+  "author": "eachcan@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eachcan/prototo/issues"
+  },
+  "homepage": "https://github.com/eachcan/prototo#readme"
+}
