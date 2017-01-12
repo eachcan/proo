@@ -55,13 +55,46 @@ $data->success = true;
 $person = new Person(); // 没有这一行也可以，数组也是可以的。field 可以通过数组形式访问，同时数组也可以替代对象
 $person['id'] = 1;
 $person['name'] = 'Eachcan';
-$person['age'] = 3;
+$person['email'] = 'eachcan@example.com';
 $data->persons[] = $person;
 
 output($data);
 ```
 
-其他语言的应用，请参考文档
+加上模拟数据后，使用JSON表示，看起来会是像下面这样：
+
+```JSON
+// ScMessage
+// 并没有 ScMessage 这样的名字了, optional 的字段也可以没有
+{
+  "success": true,
+}
+
+// Person
+{
+  "id": 1,
+  "name": "Eachcan",
+  "email": "eachcan@example.com",
+}
+
+// CsPersonGet
+{
+  "id": 1
+}
+
+// ScPersonGet
+{
+  "success": true,
+  "persons": [
+    {
+      "id": 1,
+      "name": "Eachcan",
+      "email": "eachcan@example.com",
+    }
+  ]
+}
+
+```
 
 ## 安装
 
